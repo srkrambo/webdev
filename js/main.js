@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- DOM Elements ---
     const lessonContent = document.querySelector('.lesson-content');
+
     const htmlEditor = document.getElementById('html-editor');
     const cssEditor = document.getElementById('css-editor');
     const jsEditor = document.getElementById('js-editor');
@@ -43,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentLessonIndex = 0;
 
     // --- Functions ---
+
     const updatePreview = () => {
         const htmlCode = htmlEditor.value;
         const cssCode = cssEditor.value;
@@ -108,4 +110,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Initial Load ---
     loadLesson(currentLessonIndex);
+
 });
