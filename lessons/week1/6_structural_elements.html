@@ -1,0 +1,36 @@
+<h2>Week 1: Structural Elements</h2>
+<p>Beyond giving meaning to text, HTML provides generic elements that are crucial for structuring the layout of your page. These elements act as containers that you can style with CSS.</p>
+
+<h3>Core Concepts</h3>
+<ul>
+    <li><strong>Block vs. Inline:</strong>
+        <ul>
+            <li><strong>Block-level elements</strong> (like <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>) always start on a new line and take up the full width available.</li>
+            <li><strong>Inline elements</strong> (like <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>) do not start on a new line and only take up as much width as necessary.</li>
+        </ul>
+    </li>
+    <li><strong>Generic Containers:</strong>
+        <ul>
+            <li><code>&lt;div&gt;</code>: The primary block-level container. It's used to group large sections of content, like a header, sidebar, or footer, which you can then style.</li>
+            <li><code>&lt;span&gt;</code>: The primary inline container. It's used to group a small piece of text or an element within a larger block, often to apply a specific style.</li>
+        </ul>
+    </li>
+    <li><strong><code>id</code> and <code>class</code>:</strong> These attributes are your primary hooks for styling with CSS and selecting with JavaScript.
+        <ul>
+            <li><code>id</code>: A unique identifier for one element on a page (e.g., <code>id="main-logo"</code>).</li>
+            <li><code>class</code>: A reusable identifier that can be applied to multiple elements (e.g., <code>class="news-article"</code>).</li>
+        </ul>
+    </li>
+    <li><strong>Comments:</strong> You can leave notes in your code that the browser will ignore using <code>&lt;!-- This is a comment --&gt;</code>. This is great for staying organized.</li>
+</ul>
+
+<h3>Interactive Example</h3>
+<p>Let's structure a simple webpage layout using `div`s. We'll create a main container with a header, a content area, and a footer inside it. We will assign appropriate `id`s and `class`es to each section.</p>
+
+<h3>Exercise</h3>
+<p><strong>Challenge:</strong> Take the blog post you created in the "Text & Headings" lesson and refactor it. Use `&lt;div&gt;`s to group the article's header (the main title and author info) and the article's body (the paragraphs of content) into two separate sections.</p>
+
+<div class="lesson-nav">
+    <button id="prev-lesson-button">&laquo; Previous</button>
+    <button id="next-lesson-button">Next &raquo;</button>
+</div>

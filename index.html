@@ -12,32 +12,17 @@
     </header>
     <main class="container">
         <section class="lesson-content">
-            <h2>Week 0: Thinking in Steps</h2>
-            <p>Programming isn't just about writing code; it's about solving problems. The key is to think in small, logical steps.</p>
-            
-            <h3>What is an Algorithm?</h3>
-            <p>An algorithm is just a fancy word for a step-by-step plan to solve a problem or complete a task. You use algorithms every day!</p>
-            <ul>
-                <li>The steps to make a sandwich.</li>
-                <li>The directions to get from your home to the store.</li>
-                <li>The instructions for assembling furniture.</li>
-            </ul>
-            <p>A computer needs these steps to be broken down into tiny, exact instructions.</p>
-
-            <h3>Planning an "About Me" Page</h3>
-            <p>
-                Imagine you want to create a simple "About Me" page. Before writing any code, you could plan it out like this:
-                <ol>
-                    <li><strong>Step 1:</strong> Add a main heading with my name.</li>
-                    <li><strong>Step 2:</strong> Add a paragraph with a short bio.</li>
-                    <li><strong>Step 3:</strong> Add a picture of myself.</li>
-                    <li><strong>Step 4:</strong> Add a list of my favorite hobbies.</li>
-                </ol>
-                By turning a big idea into a small list of steps, the problem becomes much easier to solve. This is the foundation of "computational thinking".
-            </p>
-            <div class="lesson-nav">
-                <button id="prev-lesson-button" disabled>&laquo; Previous</button>
-                <button id="next-lesson-button">Next &raquo;</button>
+            <div class="content-tabs">
+                <button class="content-tab-button active" data-tab="lesson">Lesson</button>
+                <button class="content-tab-button" data-tab="quiz" style="display: none;">Quiz</button>
+            </div>
+            <div class="content-panes">
+                <div id="lesson-pane" class="content-pane active">
+                    <!-- Lesson content will be loaded here by JS -->
+                </div>
+                <div id="quiz-pane" class="content-pane">
+                    <!-- Quiz content will be loaded here by JS -->
+                </div>
             </div>
         </section>
         <section class="code-editor">
@@ -57,6 +42,7 @@
             <iframe id="preview-pane"></iframe>
         </section>
     </main>
+    <script src="js/lessons.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

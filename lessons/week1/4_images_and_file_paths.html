@@ -1,0 +1,27 @@
+<h2>Week 1: Images & File Paths</h2>
+<p>Images bring life to a webpage. The <code>&lt;img&gt;</code> tag lets you embed images, but to do so, you need to understand how to tell the browser where to find the image file using file paths.</p>
+
+<h3>Core Concepts</h3>
+<ul>
+    <li><strong>The Image Tag:</strong> The <code>&lt;img&gt;</code> tag is a self-closing tag used to display an image.</li>
+    <li><strong>The <code>src</code> Attribute:</strong> The "source" attribute is mandatory. It contains the path or URL to the image you want to display.</li>
+    <li><strong>The <code>alt</code> Attribute:</strong> The "alternative text" attribute is also mandatory for accessibility. It provides a text description of the image for screen readers or if the image fails to load.</li>
+    <li><strong>File Paths:</strong>
+        <ul>
+            <li><strong>Absolute Paths:</strong> A full URL to an image on another website (e.g., <code>https://.../image.jpg</code>).</li>
+            <li><strong>Relative Paths:</strong> A path to an image relative to your current HTML file. For example, <code>src="images/logo.png"</code> tells the browser to look for an `images` folder in the same directory as the HTML file, and find `logo.png` inside it.</li>
+        </ul>
+    </li>
+    <li><strong>Favicons:</strong> A favicon is a small icon that appears in the browser tab. You add it in the <code>&lt;head&gt;</code> section using <code>&lt;link rel="icon" href="path/to/favicon.ico"&gt;</code>.</li>
+</ul>
+
+<h3>Interactive Example</h3>
+<p>Let's build a simple photo gallery. For this to work, you would typically create an <code>/images</code> folder in your project and place your image files there. The code would then use relative paths to display them.</p>
+
+<h3>Exercise</h3>
+<p><strong>Challenge:</strong> Create a "company logo" section at the top of a page. The logo should be an image that is also a clickable link pointing to the homepage (e.g., `index.html`).</p>
+
+<div class="lesson-nav">
+    <button id="prev-lesson-button">&laquo; Previous</button>
+    <button id="next-lesson-button">Next &raquo;</button>
+</div>

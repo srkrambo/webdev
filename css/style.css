@@ -137,3 +137,51 @@ section {
     opacity: 0.5;
     cursor: not-allowed;
 }
+
+/* Lesson Content Tabs */
+.lesson-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    flex-shrink: 0;
+}
+
+.content-tab-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    border-bottom: 2px solid transparent;
+}
+
+.content-tab-button.active {
+    font-weight: bold;
+    color: #007bff;
+    border-bottom-color: #007bff;
+}
+
+.content-panes {
+    flex-grow: 1;
+    position: relative;
+    overflow-y: auto;
+}
+
+.content-pane {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: none; /* Hidden by default */
+    box-sizing: border-box;
+}
+
+.content-pane.active {
+    display: block; /* Show active pane */
+}
