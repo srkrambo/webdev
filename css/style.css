@@ -21,6 +21,7 @@ h1, h2 {
 /* Main Layout */
 .container {
     display: grid;
+    grid-template-columns: 1fr 10px 1.5fr 10px 1.5fr;
     gap: 1rem;
     padding: 1rem;
     height: calc(100vh - 80px); /* Full height minus header */
