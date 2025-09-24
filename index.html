@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Dev Course</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Dev Course</h1>
+    </header>
+    <main class="container">
+        <section class="lesson-content">
+            <h2>Week 0: What is Code?</h2>
+            <p>Welcome to your first step! Let's demystify what "code" actually is.</p>
+
+            <h3>Core Concepts</h3>
+            <ul>
+                <li>Code is a set of instructions that tells a computer exactly what to do.</li>
+                <li>Think of it like a recipe: a list of steps for the computer to follow to achieve a result.</li>
+                <li>Unlike human languages, programming languages are very strict and have no ambiguity.</li>
+            </ul>
+
+            <h3>Interactive Example</h3>
+            <p>Below is a simple piece of code. It's written in a language called HTML. Can you guess what it does? Press the "Run Code" button to see it in action in the preview pane!</p>
+        </section>
+        <section class="code-editor">
+            <div class="editor-tabs">
+                <button class="tab-button active" data-tab="html">HTML</button>
+                <button class="tab-button" data-tab="css">CSS</button>
+                <button class="tab-button" data-tab="js">JavaScript</button>
+            </div>
+            <div class="editor-panes">
+                <textarea id="html-editor" class="editor-pane active" placeholder="HTML"><h1>Hello, World!</h1>
+<p>This is my first line of code.</p></textarea>
+                <textarea id="css-editor" class="editor-pane" placeholder="CSS"></textarea>
+                <textarea id="js-editor" class="editor-pane" placeholder="JavaScript"></textarea>
+            </div>
+            <button id="run-button">Run Code</button>
+        </section>
+        <section class="live-preview">
+            <iframe id="preview-pane"></iframe>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
