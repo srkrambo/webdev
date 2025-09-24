@@ -1,0 +1,139 @@
+/* Basic Resets and Body Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+/* Main Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr; /* 3 columns: content, editor, preview */
+    gap: 1rem;
+    padding: 1rem;
+    height: calc(100vh - 80px); /* Full height minus header */
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+
+/* Code Editor Specifics */
+.code-editor {
+    display: flex;
+    flex-direction: column;
+}
+
+.editor-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-button.active {
+    font-weight: bold;
+    color: #007bff;
+    border-bottom-color: #007bff;
+}
+
+.editor-panes {
+    flex-grow: 1;
+    position: relative;
+}
+
+.editor-pane {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    resize: none;
+    display: none; /* Hidden by default */
+    box-sizing: border-box;
+}
+
+.editor-pane.active {
+    display: block; /* Show active pane */
+}
+
+#run-button {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#run-button:hover {
+    background-color: #218838;
+}
+
+/* Live Preview */
+.live-preview iframe {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Lesson Navigation */
+.lesson-nav {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lesson-nav button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.lesson-nav button:hover:not(:disabled) {
+    background-color: #e9ecef;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.lesson-nav button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
