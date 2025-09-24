@@ -166,4 +166,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Initial Load ---
     loadLesson(currentLessonIndex);
+
+    // --- Initialize Splitter ---
+    Split(document.querySelector('.container'), {
+        columnGutters: [{
+            track: 2,
+            element: document.querySelector('.gutter-col-1'),
+        }, {
+            track: 4,
+            element: document.querySelector('.gutter-col-2'),
+        }],
+    });
 });

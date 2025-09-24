@@ -11,7 +11,7 @@
         <h1>Interactive Web Dev Course</h1>
     </header>
     <main class="container">
-        <section class="lesson-content">
+        <section id="lesson-area" class="lesson-content">
             <div class="content-tabs">
                 <button class="content-tab-button active" data-tab="lesson">Lesson</button>
                 <button class="content-tab-button" data-tab="quiz" style="display: none;">Quiz</button>
@@ -25,7 +25,8 @@
                 </div>
             </div>
         </section>
-        <section class="code-editor">
+        <div class="gutter gutter-col-1"></div>
+        <section id="editor-area" class="code-editor">
             <div class="editor-tabs">
                 <button class="tab-button active" data-tab="html">HTML</button>
                 <button class="tab-button" data-tab="css">CSS</button>
@@ -38,10 +39,12 @@
             </div>
             <button id="run-button">Run Code</button>
         </section>
-        <section class="live-preview">
+        <div class="gutter gutter-col-2"></div>
+        <section id="preview-area" class="live-preview">
             <iframe id="preview-pane"></iframe>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/split-grid/dist/split-grid.js"></script>
     <script src="js/lessons.js"></script>
     <script src="js/main.js"></script>
 </body>
